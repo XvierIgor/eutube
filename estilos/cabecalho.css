@@ -1,0 +1,168 @@
+.cabecalho{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+.menu_hamburguer{
+    height: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.logo_eutube{
+    height: 20px;
+}
+.lupa{
+    height: 18px;
+}
+.microfone{
+    height: 18px;
+}
+.botao-subir{
+    height: 18px;
+}
+.botao-apps{
+    height: 18px;
+}
+.botao-notificacoes{
+    height: 18px;
+}
+.secao-esquerda{
+    display: flex;
+    align-items: center;
+}
+.secao-central{
+    flex: 1;
+    display: flex;
+    max-width: 650px;
+    align-items:center;
+    margin-left: 70px;
+    margin-right: 35px;
+}
+.secao-direita{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.botao-pesquisar, 
+.botao-microfone,
+.div-botao-subir, 
+.div-botao-apps,
+.div-notificacoes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campo-pesquisar{
+    flex: 1;
+    height: 37px;
+    padding-left: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    background-image: url("icones/teclado.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 40px;
+    width: 0;
+}
+.botao-pesquisar{
+    height: 41px;
+    width: 60px;
+    font-size: 22px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb( 192, 192, 192 );
+    margin-right: 10px;
+    margin-left: -1px;
+}
+
+.dica{
+    position: absolute;
+    background-color: rgb(92, 91, 91);
+    color: white;
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    padding: 8px;
+    border-radius: 2px;
+    bottom: -55px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+.botao-pesquisar:hover .dica, 
+.botao-microfone:hover .dica, 
+.div-botao-subir:hover .dica, 
+.div-botao-apps:hover .dica,
+.div-notificacoes:hover .dica,
+.div-logo_eutube:hover .dica_logo
+{
+    opacity: 0.92;
+}
+.botao-microfone{
+    height: 41px;
+    width: 41px;
+    border-radius: 20.5px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    transition: background-color 0.15s;
+}
+.botao-microfone:hover{
+    background-color: rgb(220, 220, 220);
+}
+.dica_logo{
+    position: absolute;
+    background-color: white;
+    color: gray;
+    font-size: 18px;
+    font-family: Roboto, Arial;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid black;
+    bottom: -25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    left: 150px;
+}
+.avatar-canal{
+    height: 32px;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    margin-right: 24px;
+}
+.contagem-notificacoes{
+    position: absolute;
+    top: -4px;
+    right: -9px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 9px;
+}

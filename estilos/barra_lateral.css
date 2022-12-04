@@ -1,0 +1,28 @@
+.barra-lateral{
+    position: fixed;
+    left: 0;
+    top: 50px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.link-barra-lateral{
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link-barra-lateral img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+.link-barra-lateral div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+}
+.link-barra-lateral:hover {
+    background-color: rgb(235, 235, 235);
+}
